@@ -1,0 +1,65 @@
+.CardContainer{
+   position: relative;
+   width: 90%;min-width:15rem;max-width: 95%;height: 100%;min-height: 139px;max-height: 350px;
+   margin: 0 auto;
+   z-index: 2;
+}
+.resizable{
+   resize: both;
+   overflow-x: hidden;
+}
+.resizable:active > .cardContent {border: 4px solid #0df3c1;}
+
+.cardContent{
+   position: relative;
+   display: grid;
+   width: 100%;height: 100%;
+   padding: 3px;
+   grid-template-columns: 30% 70%;
+   border-radius: 10px;
+   transition: border .1s .25s ease-out;
+   overflow-x:hidden;
+   box-shadow: 2px 4px 7px #5f545fe0;
+}
+
+.rightContainer{
+   position: relative;
+   margin-right: 5px;
+   width: 100%;
+   height: 100%;
+   padding: 2px;
+   word-break: normal;
+   word-wrap: break-word;
+}
+
+.imgContainer{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   padding: 3px;
+   object-fit: contain;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.imgContainer >img{
+   position: relative;
+   margin: 0 auto;
+   width: 100%;
+   height: 100%;
+}
+
+.leftContainer{
+   position: relative;
+   margin: 2px;
+   padding: 6px;
+   display: flex;
+   flex-direction: column;
+   border-left: 2px solid #ccc ;
+}
+
+.titleFitness{margin-top:  3px;text-align: center;}
+.descriptionFitness{margin-top: 10px;margin-left: 15px;}
+
+
+
